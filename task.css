@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'open Sans',sans-serif;
+    background-color: whitesmoke;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 900px;
+    margin: 0;
+    padding: 0 20px;
+}
+header h1{
+    font-size: 3.5rem;
+    line-height: 2;
+    color: orchid;
+}
+header form{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+form>*{
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 7px;
+    border: 1px solid#777;
+    border-radius: 3px;
+}
+form button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+form button :hover{
+    background-color:red
+
+
+}
+.notes{
+    padding: 1rem;
+    background-color: wheat;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+.note counter,
+.note-text {
+   font-size: 1.4rem;
+}
+.note-title {
+    font-size: 1.6rem;
+}
+.note-btn {
+    padding: 7px;
+    margin-top: 5px;
+    background-color: orangered;
+    outline: none;
+    border:none;
+    border-radius: 3px;
+    counter-reset: white;
+    cursor: pointer;
+}
+@media(min-width:992px){
+    .notes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }    
+}
